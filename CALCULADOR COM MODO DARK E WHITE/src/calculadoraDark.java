@@ -199,7 +199,7 @@ import javax.swing.border.LineBorder;
               }
                   
               }else {
-                btnModo.setIcon(new ImageIcon(calculadoraDark.class.getResource("/image/blackMode.png")));
+                btnModo.setIcon(new ImageIcon(calculadoraDark.class.getResource("/image/darkMode.png")));
                 corFundo = Color.white;
                 corBotao= new Color(204, 204, 204);
                 corTexto = new Color(77, 77, 77);
