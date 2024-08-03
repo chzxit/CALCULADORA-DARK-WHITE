@@ -15,7 +15,7 @@ public class Principal {
                     //definir a opacidade da calculadora
                     frame.setOpacity((float)0.99);
                     //definir o titulo da calculadora
-                    frame.setTitle("Calculadora ");
+                    frame.setTitle("Amo a dani");
 
                 } catch(Exception e){
                     e.printStackTrace();

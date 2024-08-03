@@ -141,7 +141,7 @@ import javax.swing.border.LineBorder;
                 JButton btn = (JButton)component;
                 alterarCorBotao(btn);
             }
-                //instanceof é usado para verificar se um objeto é uma instância de uma classe específica ou implementa uma interface específica. Ele retorna um valor booleano
+             //instanceof é usado para verificar se um objeto é uma instância de uma classe específica ou implementa uma interface específica. Ele retorna um valor booleano
             if(component instanceof JPanel){ //panelBotoes 1 a 9
                 for(Component botoesPanel: ((JPanel)component).getComponents()){
                     if(botoesPanel instanceof JButton){
@@ -179,7 +179,7 @@ import javax.swing.border.LineBorder;
                         btn.setBorder(new LineBorder(corLinha, 2));
                         contentPane.setBackground(corFundo);
                     }
-                        //instanceof é usado para verificar se um objeto é uma instância de uma classe específica ou implementa uma interface específica. Ele retorna um valor booleano
+                 //instanceof é usado para verificar se um objeto é uma instância de uma classe específica ou implementa uma interface específica. Ele retorna um valor booleano
                     if(component instanceof JPanel){ //panelBotoes 1 a 9
                         for(Component botoesPanel: ((JPanel)component).getComponents()){
                             if(botoesPanel instanceof JButton){
@@ -198,7 +198,7 @@ import javax.swing.border.LineBorder;
 
               }
                   
-              }else {
+              } else {
                 btnModo.setIcon(new ImageIcon(calculadoraDark.class.getResource("/image/darkMode.png")));
                 corFundo = Color.white;
                 corBotao= new Color(204, 204, 204);
@@ -218,7 +218,7 @@ import javax.swing.border.LineBorder;
                         btn.setBorder(new LineBorder(corLinha, 2));
                         contentPane.setBackground(corFundo);
                     }
-                        //instanceof é usado para verificar se um objeto é uma instância de uma classe específica ou implementa uma interface específica. Ele retorna um valor booleano
+                     //instanceof é usado para verificar se um objeto é uma instância de uma classe específica ou implementa uma interface específica. Ele retorna um valor booleano
                     if(component instanceof JPanel){ //panelBotoes 1 a 9
                         for(Component botoesPanel: ((JPanel)component).getComponents()){
                             if(botoesPanel instanceof JButton){
@@ -276,7 +276,7 @@ import javax.swing.border.LineBorder;
             @Override
             //O método mouseDragged é sobrescrito para ser chamado quando o mouse é arrastado com um botão pressionado.
             public void mouseDragged(MouseEvent e){
-                //setLocation(e.getXOnScreen() - x, e.getYOnScreen() - y); define a nova posição da janela com base no movimento do mouse. x e y são variáveis que armazenam a diferença inicial entre a posição do mouse e a posição da janela, que serão definidas no próximo bloco de código.
+            //setLocation(e.getXOnScreen() - x, e.getYOnScreen() - y); define a nova posição da janela com base no movimento do mouse. x e y são variáveis que armazenam a diferença inicial entre a posição do mouse e a posição da janela, que serão definidas no próximo bloco de código.
                 setLocation(e.getXOnScreen() -x , e.getYOnScreen() -y);
             }
         });
@@ -308,15 +308,15 @@ import javax.swing.border.LineBorder;
         }else {
                 String textoDisplay = textFieldDisplay.getText();
                 char lastChar = textoDisplay.charAt(textoDisplay.length()-1);
-                // se for algum dos operados ira entrar nesse if e esse if ira fazer que troque o operador caso o usuario ja tenha clicado em algum operador diferente.
-                // esse -1 significa exeto o ultimo caracter.
+                 // se for algum dos operados ira entrar nesse if e esse if ira fazer que troque o operador caso o usuario ja tenha clicado em algum operador diferente.
+                 // esse -1 significa exeto o ultimo caracter.
                 if (isOperador(lastChar) && isOperador(comando.charAt(comando.length()-1))) {
                     textoDisplay = textoDisplay.substring(0, textoDisplay.length()-1);
                     textFieldDisplay.setText(textoDisplay + comando);
                 }else{
                     //esse if vai vericar se o texto que tem na calculador e 0.
                     if(textFieldDisplay.getText().equalsIgnoreCase("0")){
-                        //se for zero ira passa para vazio esse display para que nao seja concatenado um valor com 0.
+                    //se for zero ira passa para vazio esse display para que nao seja concatenado um valor com 0.
                         textFieldDisplay.setText("");
                     }
 
@@ -327,7 +327,7 @@ import javax.swing.border.LineBorder;
 
 
     }
-        // usado para testar se é um operador 
+     // usado para testar se é um operador 
     private boolean isOperador(char operador){
         return  operador == '+' || operador == '-' || operador == '*' || operador == '/';
     }
